@@ -7,5 +7,16 @@
  *
  * Return: Always (0)
  */
-int main(void) {       int n;        srand(time(0));       n = rand()  - RAND_MAX / 2;        printf("%d \n", n);
-if (n > 0)       {            printf("The number is positive \n");       }       else if (n < 0)       {            printf("The number is negative \n");       }       else       {            printf("The number is zero \n");        }       return 0; }
+int main(void)
+{
+	int n;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n >= 0)
+	{printf("%d positive \n", n); }
+	else
+		(n < 0);
+	{printf("%d negative \n", n); }
+	return (0);
+}
